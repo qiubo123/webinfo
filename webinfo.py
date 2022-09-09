@@ -140,7 +140,7 @@ for i in url:
     pool.submit(main,i)
 pool.shutdown(True)  
 print(u.get_string())
-html = u.get_html_string()#输出为html
-# print(html)
-with open('test.html','w',encoding='utf-8') as hp:
-    hp.write(html)
+# html = u.get_html_string()#输出为html
+# # print(html)
+# with open('test.html','w',encoding='utf-8') as hp:
+#     hp.write(html)
