@@ -1,0 +1,4 @@
+dnspython==2.2.1
+lxml==4.9.1
+prettytable==3.0.0
+requests==2.25.1
