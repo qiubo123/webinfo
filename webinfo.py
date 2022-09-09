@@ -122,9 +122,9 @@ def get_title(z):
     # z,code,server,length
     return [z,title,code,server,length,encode,encode1,encode2]
 pool = ThreadPoolExecutor(30)#创建线程资源池
-u = PrettyTable(['地址','标题','响应码','中间件','编码','编码1','编码2','长度','DNS解析地址'])
+u = PrettyTable(['地址','标题','响应码','中间件','长度','最后编码','编码1','编码2','DNS解析地址'])
 u.align['地址','标题']='l'#左对齐
-u._max_width = {'地址':35,'标题':45,'响应码':10,'中间件':15,'编码1':10,'长度':10,'DNS解析地址':25}
+u._max_width = {'地址':35,'标题':45,'响应码':10,'中间件':15,'长度':10,'最后编码':15,'编码1':10,'编码2':10,'DNS解析地址':25}
 # # 
 def main(i):   
     if get_title(i) != None:
